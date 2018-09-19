@@ -1,0 +1,19 @@
+---
+title: "September 18, 2018"
+
+output: html_document
+---
+
+
+
+```{r ,echo=FALSE,warning=FALSE}
+library(leaflet)
+my_map <- leaflet() %>%
+addTiles()
+
+EiffelTour <- c("<a href= 'https://www.tajmahal.gov.in/' >Tajmahal Tour</a>")
+leaflet() %>%
+addTiles() %>%
+addMarkers(lat=27.1750, lng=78.0422, popup = EiffelTour)
+```
+
